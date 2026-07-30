@@ -1,80 +1,45 @@
-# POCKET App (for users)
+# POCKET App (market)
 
 <p align="center"><img src="docs/brand/pocket-mark.svg" width="100" alt="POCKET"/></p>
 
-This hub is the **user-facing front door**.  
-Full host product source: **[FreddyCreates/pocket](https://github.com/FreddyCreates/pocket)**.
+## Two editions (read this)
 
-No secrets live here — only public links and how you open a seat.
+| | **Founder POCKET** | **Market POCKET** |
+|--|--------------------|-------------------|
+| Who | Operators / founders on their machine | Customers, random users, invite funnel |
+| Files | **Their** full local PC + virtual | **Their** local sandbox + virtual |
+| Never | — | Founder’s personal files / host disk |
+
+**Invite ≠ “use my laptop.”** Invite = marketing + create **your** seat with **your** username/password.
+
+Product source: [FreddyCreates/pocket](https://github.com/FreddyCreates/pocket)
 
 ---
 
-## Download / open
+## What market users get
 
-| | |
-|--|--|
-| **Windows (Electron)** | [Latest release](https://github.com/FreddyCreates/pocket/releases/latest) |
-| **Cloud desk (browser)** | Your operator’s URL, e.g. `https://pocket.medinatechlabs.net/desk` |
-| **Edge app** | Open the desk in Edge → ⋯ → Apps → Install this site as an app |
+1. **Virtual sovereign explorer** — platform files under their account  
+2. **Local sandbox** — write workspace that is still **theirs**, not the founder’s OneDrive  
+3. **Git / projects** — repos and shared project rooms by account  
+4. **Agents** — on their space only  
+
+Hard rule enforced in product: market jobs never resolve into founder private trees.
 
 ---
 
 ## First open (user client)
 
-When you launch the **user** app (not the owner shortcut):
+Pick where the **market desk** lives (team URL / your install / custom).  
+Then **Create my seat** with `pk_seat_…` — or sign in as you.
 
-```text
-┌─────────────────────────────────────┐
-│  Welcome to POCKET                  │
-│                                     │
-│  ○ Team / cloud desk   (most users) │
-│  ○ This computer hosts POCKET       │
-│  ○ Custom URL                       │
-│                                     │
-│           [ Continue ]              │
-└─────────────────────────────────────┘
-         │
-         ▼  (if cloud / custom)
-┌─────────────────────────────────────┐
-│  Desk URL: https://…                │
-│  [Back]            [ Open POCKET ]  │
-└─────────────────────────────────────┘
-         │
-         ▼
-   Desk loads → Create my seat or Sign in
-```
-
-| Choice | What happens |
-|--------|----------------|
-| **Team / cloud** | You paste the operator’s public URL. App checks the desk is up, then opens `/desk`. |
-| **This computer** | App starts (or reuses) a local host on this PC if the product is installed. |
-| **Custom URL** | Same as cloud, any `https` origin your team gave you. |
-
-**Saved on device:** only which source + desk URL.  
-**Never saved by the shell:** passwords, seat keys (`pk_seat_…`), API keys.
-
-Next time you open the app, it goes straight to your saved desk.  
-Change later: app menu → **Change desk source…**
+Saved on device: desk URL only. Never seat keys or passwords.
 
 ---
-
-## Create your seat (multi-user)
-
-1. Operator mints a **seat invite key** (`pk_seat_…`) — not their password.
-2. You open the desk → **Create my seat**.
-3. Paste the key, choose **your** username and password.
-4. Next time: sign in as **you**. You are not the owner account.
-
----
-
-## What POCKET is
-
-Real multi-agent desk on a host PC: coding agents, cowork/desktop embodiment, sovereign git vault, API.
 
 ## Links
 
-- Product source: https://github.com/FreddyCreates/pocket  
-- Multi-user docs: https://github.com/FreddyCreates/pocket/blob/main/docs/MULTI_USER.md  
-- Ship guide: https://github.com/FreddyCreates/pocket/blob/main/docs/SHIP_FOR_USERS.md  
+- Editions: https://github.com/FreddyCreates/pocket/blob/main/docs/PRODUCT_EDITIONS.md  
+- Multi-user: https://github.com/FreddyCreates/pocket/blob/main/docs/MULTI_USER.md  
+- Releases: https://github.com/FreddyCreates/pocket/releases  
 
 © ItsNotAI Labs
